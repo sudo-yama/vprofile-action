@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
       - name: vproapp
-        image: "{{ .Values.appimage }}:{{ .Values.apptag }}"
+        # image: "{{ .Values.appimage }}:{{ .Values.apptag }}"
+        image: "weerapatx/vprofileapp:latest" 
         ports:
         - name: vproapp-port
           containerPort: 8080
